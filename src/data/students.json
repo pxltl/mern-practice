@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "studentNumber": "S12345",
+        "course": "Computer Science",
+        "section": "A",
+        "sex": "Male",
+        "age": 20,
+        "birthday": "1990-01-01"
+    }
+]
