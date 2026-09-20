@@ -1,16 +1,38 @@
-function StudentCard({student}) {
+export default function StudentCard({ student }) {
     return (
-        <div>  
-            <h1>Student #{student.id}</h1>
-            <p>Name:            {student.name}</p>
-            <p>Student Number:  {student.studentNumber}</p>
-            <p>Course:          {student.course}</p>
-            <p>Section:         {student.section}</p>
-            <p>Sex:             {student.sex}</p>
-            <p>Age:             {student.age}</p>
-            <p>Birthday:        {student.birthday}</p>
+        <div className="w-fit p-5 flex flex-col justify-center items-center gap-2 text-md bg-blue-100 border-1 rounded-lg border-blue-950">
+            <table className="text-md">
+                <tbody>
+                    <tr>
+                        <td className="pr-4 font-semibold">Name:</td>
+                        <td>{student.name}</td>
+                    </tr>
+                    <tr>
+                        <td className="pr-4 font-semibold">Student Number:</td>
+                        <td>{student.studentNumber}</td>
+                    </tr>
+                    <tr>
+                        <td className="pr-4 font-semibold">Course:</td>
+                        <td>{student.course}</td>
+                    </tr>
+                    <tr>
+                        <td className="pr-4 font-semibold">Section:</td>
+                        <td>{student.section}</td>
+                    </tr>
+                    <tr>
+                        <td className="pr-4 font-semibold">Sex:</td>
+                        <td>{student.sex}</td>
+                    </tr>
+                    <tr>
+                        <td className="pr-4 font-semibold">Age:</td>
+                        <td>{student.age}</td>
+                    </tr>
+                    <tr>
+                        <td className="pr-4 font-semibold">Birthday:</td>
+                        <td>{student.birthday}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     );
 }
-
-export default StudentCard;
